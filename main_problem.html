@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Główny problem - teoria węzłów</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script defer src="themes.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Teoria węzłów</h1>
+	</header>
+	<nav><div id="nav">
+		<ul>
+			<li><a href="index.html">Strona główna</a></li>
+			<li><a href="main_problem.html">Główny problem</a></li>
+			<li><a href="history.html">Historia i zastosowania</a></li>
+			<li><a href="links_and_braids.html">Sploty i warkocze</a></li>
+			<li><a href="other_problems.html">Inne zagadnienia</a></li>
+		</ul>
+		<button id="light" type="button">A</button>
+		<button id="dark" type="button">A</button>
+	</div></nav>
+	<main><div id="main">
+		<h2>Główny problem</h2>
+		<section>
+			<h3>Równoważność</h3>
+			<p>Teoria węzłów jest częścią topologii, czyli działu matematyki zajmującego się kształtami i przestrzeniami. Jednak w odróżnieniu od geometrii, nie są dla niej istotne wszystkie odległośći lub kąty w danym kształcie, ale jego bardziej ogólne własności, np. wymiar, liczba otworów, itd.</p>
+			<p>Głównym problemem teorii węzłów jest, mając dane dwa węzły, rozstrzygnąć, czy są one takie same. Jednak nie chodzi tu o to, czy mają one ten sam rozmiar lub czy ich poszczególne punkty znajdują się w odpowiedznich odległościach. W teorii węzłów dwa węzły są takie same, jeżeli możemy jeden z nich przekształcić w drugi bez rozcinania go (można to traktować, jakby węzły zrobione z gumy lub podobnego materiału), co formalnie nazywane jest równoważnością węzłów.</p>
+			<p>Przykładowo poniższe dwa węzły są równoważne, ponieważ drugi można otrzymać z pierwszego przez wydłużennie jego fragmentu.</p>
+			<div class="list-horiz">
+				<div><img src="./img/knot2.png"></div>
+				<div><img src="./img/knot4.png"></div>
+			</div>
+			<p>W tym przypadku pierwszy z węzłów uzyskamy odwracając pętlę drugiego.</p>
+			<div class="list-horiz">
+				<div><img src="./img/knot1.png"></div>
+				<div><img src="./img/knot5.png"></div>
+			</div>
+		</section>
+		<section>
+			<h3>Ruchy Reidemeistera</h3>
+			<p>Węzły to obiekty trójwymiarowe, ale często (w tym na tej stronie) przedstawia się je na płaszczyźnie. Taki obraz nazywany jest diagramem węzła. Musi on jednak być jednoznaczny, przez co np. zaznacza się która część węzła przebiega nad skrzyżowaniem oraz przez jeden punkt nie mogą przechodzić więcej niż dwa fragmenty węzła.</p>
+			<p>Okazuje się, że na podstawie samych diagramów można określić, czy przedstawiają one równoważne węzły. Równoważność zachodzi, gdy jeden z diagramów możemy przekształcić w drugi używając dowolnego ciągu 3 rodzajów przekształceń, które nazywamy ruchami Reidemeistera na cześć ich odkrywcy.</p>
+			<ul class="list-vert">
+				<li>
+					<p>Pierwszy ruch polega na zakręceniu (odkręceniu) prostej pętli:</p>
+					<img src="./img/move1.png">
+				</li>
+				<li>
+					<p>Drugim ruchem jest wsunięcie (wysunięcie) prostego fragmentu diagramu nad (pod) inny:</p>
+					<img src="./img/move2.png">
+				</li>
+				<li>
+					<p>Trzeci ruch pozwala przesunąć prostą część, która cała przechodzi nad (pod) skrzyżowaniem na drugą jego stronę:</p>
+					<img src="./img/move3.png">
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Niezmienniki</h3>
+			<p>Niezmiennik węzła to taka jego cecha (lub obiekt, który można mu przyporządkować), która pozostaje niezmieniona dla wszystkich węzłów równoważnych do niego. Zatem, jeżeli jest on różny dla dwóch węzłów, to pozwala definitywnie stwierdzić, że są różne. Nie jest jednak gwarantowane, że dwa węzły mające tą samą wartość niezmiennika są równoważne.</p>
+			<p>Przykładowym niezmiennikiem jest trójkolorowalność. Polega ona na tym, że diagram węzła można pokolorować trzema kolorami według następujących zasad</p>
+			<ul>
+				<li>należy użyć co najmniej dwóch kolorów</li>
+				<li>fragmenty spotykające się przy skrzyżowaniu muszą być tego samego albo wszystkie różnych kolorów:</li>
+			</ul>
+			<div class="list-horiz">
+				<div><img src="./img/crossing1.png"></div>
+				<div><img src="./img/crossing2.png"></div>
+			</div>
+			<p>Przykładem węzła trójkolorowalnego jest trójlistnik:</p>
+			<img src="./img/tricolor1.png" width="256px" height="256px">
+		</section>
+	</div></main>
+</body>
+</html>

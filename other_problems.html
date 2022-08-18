@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inne zagadnienia - teoria węzłów</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script defer src="themes.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Teoria węzłów</h1>
+	</header>
+	<nav><div id="nav">
+		<ul>
+			<li><a href="index.html">Strona główna</a></li>
+			<li><a href="main_problem.html">Główny problem</a></li>
+			<li><a href="history.html">Historia i zastosowania</a></li>
+			<li><a href="links_and_braids.html">Sploty i warkocze</a></li>
+			<li><a href="other_problems.html">Inne zagadnienia</a></li>
+		</ul>
+		<button id="light" type="button">A</button>
+		<button id="dark" type="button">A</button>
+	</div></nav>
+	<main><div id="main">
+		<h2>Inne zagadnienia</h2>
+		<section>
+			<h3>Węzły pierwsze</h3>
+			<p>Wszyscy znamy pojęcie liczby pierwszej. Jest to taka liczba, która ma dokładnie dwa dzielniki - 1 i samą siebie. Mnożąc liczby pierwsze możemy otrzymać liczby złożone, które są wszystkimi pozostałymi liczbami naturalnymi (większymi od 1). Podobnie jest w przypadku węzłów, choć w ich przypadku nie mówimy o iloczynie, ale o sumie. Przykładowo, sumą dwóch trójlistników</p>
+			<div class="list-horiz">
+				<div><img src="./img/knot2.png"></div>
+				<div><img src="./img/knot2.png"></div>
+			</div>
+			<p>jest następujący węzeł:</p>
+			<img src="./img/composite.png" width="512px" height="256px">
+			<p>Zatem węzeł jest pierwszy, jeżeli nie można go przedstawić jako sumę węzłów nietrywialnych (wyjątkiem jest sam węzeł trywialny). Przykładami takich węzłów są trójlistnik i ósemkowy. Jak można się domyślić, węzeł złożony to taki, który jest sumą węzłów pierwszych.</p>
+		</section>
+		<section>
+			<h3>Liczba patyków</h3>
+			<p>Często węzły rozpatruje się jako gładkie krzywe, które można dowolnie wyginać. Czasami jednak traktuje się je inaczej, tak że zubdowane są z prostych kawałków. Liczba patyków to niezmiennik równy najmniejszej liczbie takich kawałków potrzebnych do stworzenia danego węzła. Jest to zagadnienie dość proste do zrozumienia, ale wartość liczby patyków nie jest znana dla wielu węzłów. Możemy jednak ustalić jej minimum i maksimum zależne od liczby przecięć węzła.</p>
+			<p>Przykłady węzłów zbudowanych z patyków:</p>
+			<div class="list-horiz">
+				<div>
+					<ul><li><p>węzeł trywialny - 3</p></li></ul>
+					<img src="./img/stick1.png">
+				</div>
+				<div>
+					<ul><li><p>trójlistnik - 6</p></li></ul>
+					<img src="./img/stick2.png">
+				</div>
+			</div>
+		</section>
+	</div></main>
+</body>
+</html>
